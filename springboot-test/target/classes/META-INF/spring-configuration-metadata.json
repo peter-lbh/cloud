@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "jdbc",
+      "type": "com.caibaba.base.config.JdbcPropertiesConfig",
+      "sourceType": "com.caibaba.base.config.JdbcPropertiesConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jdbc.driver",
+      "type": "java.lang.String",
+      "sourceType": "com.caibaba.base.config.JdbcPropertiesConfig"
+    },
+    {
+      "name": "jdbc.password",
+      "type": "java.lang.String",
+      "sourceType": "com.caibaba.base.config.JdbcPropertiesConfig"
+    },
+    {
+      "name": "jdbc.url",
+      "type": "java.lang.String",
+      "sourceType": "com.caibaba.base.config.JdbcPropertiesConfig"
+    },
+    {
+      "name": "jdbc.username",
+      "type": "java.lang.String",
+      "sourceType": "com.caibaba.base.config.JdbcPropertiesConfig"
+    }
+  ],
+  "hints": []
+}
