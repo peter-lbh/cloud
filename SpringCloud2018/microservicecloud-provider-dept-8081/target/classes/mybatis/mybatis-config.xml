@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--也可以配置在application.xml文件里-->
+<configuration>
+    <settings>
+        <setting name="lazyLoadingEnabled" value="false" />
+        <setting name="aggressiveLazyLoading" value="false" />
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode" />
+        <setting name="cacheEnabled" value="true"/> <!--二级缓存开启-->
+    </settings>
+    <!--<mappers>-->
+        <!--<mapper resource="com/xmg/p2p/base/mapper/LoginInfoMapper.xml" />-->
+    <!--</mappers>-->
+    <!--配置缓存别名-->
+    <!--<typeAliases>-->
+        <!--<typeAlias type="org.mybatis.caches.redis.RedisCache" alias="redis"/>-->
+    <!--</typeAliases>-->
+</configuration>

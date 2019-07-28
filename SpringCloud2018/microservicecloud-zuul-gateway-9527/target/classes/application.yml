@@ -1,0 +1,26 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: microservice-zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: Zuul-GateWay-9527
+    prefer-ip-address: true
+info:
+  app.name: provider-dept-service
+  company.name: 腾讯科技
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+#配置路径映射 以key-value来映射  加了映射后注意还需要吧原来微服务名访问的路径给废除掉
+zuul:
+  routes:
+    mydept.serviceId: microservicecloud-dept #注意配置映射时key的命名方式----- 路径.xxx
+    mydept.path: /mydept/**
+ # ignored-services: microservicecloud-dept #配置zuul忽略微服务名访问的路径时，一次配置忽略多个用 ----"*"
+  ignored-services: "*"
+ #配置路径前缀
+  prefix: /atguigu
